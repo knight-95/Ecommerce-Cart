@@ -27,7 +27,7 @@ export default function ProductPage(props) {
   }
 
   return (
-    <div className="flex flex-col p-4">
+    <div className="flex flex-col p-4 bg-trueGray-900">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1000px] mx-auto">
         <div className="md:p-2 md:shadow">
           <img

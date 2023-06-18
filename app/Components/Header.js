@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import useCart from "../(store)/store";
 import Modal from "../Modal";
+import Slider from "./Slider";
 
 export default function Header() {
   const cartItems = useCart((state) => state.cart);
@@ -11,12 +12,12 @@ export default function Header() {
   console.log(cartItems);
   return (
     <div>
-      <header>
+      <header className="sticky top-0 z-10">
         {openModal && <Modal />}
         <div class="flex flex-wrap">
           <section class="relative mx-auto">
             {/* <!-- navbar --> */}
-            <nav class="flex justify-between bg-gray-900 text-white w-screen">
+            <nav class="flex justify-between bg-black text-white w-screen">
               <div class="px-5 xl:px-12 py-6 flex w-full items-center">
                 <Link class="text-3xl font-bold font-heading" href="#products">
                   Ecommerce Cart
@@ -132,6 +133,7 @@ export default function Header() {
           </section>
         </div>
       </header>
+      <Slider/>
     </div>
   );
 }

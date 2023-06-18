@@ -7,10 +7,8 @@ export const metadata = {
 
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import Header from "./product/Header";
-import Header_ani from "./product/Header_ani";
-import Footer from "./product/Footer";
-// import Carousel from "./Carousel_ani";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,10 +27,8 @@ export default function RootLayout({ children }) {
       <body
         className={"min-h-screen flex flex-col relative " + inter.className}
       >
-        <Header />
-        {/* <Carou    /sel /> */}
-        {/* <Header_ani/> */}
-        <div className="flex-1">{children}</div>
+        <Header className="sticky top-0" />
+        <div className="flex-1 ">{children}</div>
         <Footer />
         <div id="portal"></div>
       </body>
