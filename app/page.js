@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Stripe from 'stripe'
-import ProductCard from './ProductCard'
+import ProductCard from './product/ProductCard'
 
 async function getStripeProducts() {
   const stripe = new Stripe(process.env.STRIPE_SECRET ?? '', {

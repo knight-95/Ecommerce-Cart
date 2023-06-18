@@ -36,7 +36,7 @@ export default function ProductPage(props) {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex flex-col gap-2 p-4">
+        {/* <div className="flex flex-col gap-2 p-4">
           <div className="flex md:flex-col md:items-start text-xl  items-center justify-between gap-2">
             <h3>{name}</h3>
             <p className="md:text-base">${cost / 100}</p>
@@ -44,11 +44,35 @@ export default function ProductPage(props) {
           <p className="text-sm flex-1">{description}</p>
           <button
             onClick={handleAddToCart}
-            className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+            class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
           >
-            <i className="fa-solid cursor-pointer group-hover:text-slate-500 fa-cart-shopping"></i>
-            Add to Cart
+            <i className="fa-solid cursor-pointer group-hover:text-slate-500 fa-cart-shopping px-2"></i>
+            Add to cart
           </button>
+        </div> */}
+        <div class="mt-4 px-5 pb-5">
+          <h5 class="text-xl font-semibold tracking-tight text-slate-900">
+            {name}
+          </h5>
+
+          <p class="mb-6 text-gray-400 py-2">
+            {description}
+          </p>
+          <div class="flex items-center justify-between">
+            <p>
+              <span class="text-xl font-bold text-slate-900 inset-x-0 bottom-0">
+                ₹{cost / 100}*
+              </span>
+              {/* <span class="text-sm text-slate-900 line-through">$299</span> */}
+            </p>
+            <button
+              onClick={handleAddToCart}
+              class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+            >
+              <i className="fa-solid cursor-pointer group-hover:text-slate-500 fa-cart-shopping px-2"></i>
+              Add to cart
+            </button>
+          </div>
         </div>
       </div>
     </div>

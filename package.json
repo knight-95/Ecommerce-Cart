@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.0.3",
+    "bootstrap": "^5.3.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "stripe": "^11.16.0",
     "zustand": "^4.3.6"
   },
