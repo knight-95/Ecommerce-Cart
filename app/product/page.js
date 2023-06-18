@@ -46,6 +46,7 @@ export default function ProductPage(props) {
             onClick={handleAddToCart}
             className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
           >
+            <i className="fa-solid cursor-pointer group-hover:text-slate-500 fa-cart-shopping"></i>
             Add to Cart
           </button>
         </div>
