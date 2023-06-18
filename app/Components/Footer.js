@@ -3,11 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <footer class="bg-gray-50" id="footer">
-      <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
+      <div class="mx-auto grid max-w-screen-xl gap-y-8 gap-x-10 px-4 py-10 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
         <div class="max-w-sm">
           <div class="mb-6 flex h-12 items-center space-x-2">
             <span class="text-2xl font-bold">
-              Ecommerce<span class="text-blue-600">Cart</span>.
+              <h2 class="text-xl font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+                Ecommerce Cart
+              </h2>
             </span>
           </div>
           <div class="text-gray-500">
@@ -74,7 +76,7 @@ const Footer = () => {
         </div>
       </div>
       <div class="bg-gray-100">
-        <div class="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-4 py-3 text-center text-gray-500 sm:flex-row sm:justify-between sm:text-left">
+        <div class="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-2 py-3 text-center text-gray-500 sm:flex-row sm:justify-between sm:text-left">
           <div class="">© 2023 EcommerceCart | All Rights Reserved</div>
           <div class="">
             <a class="" href="#">

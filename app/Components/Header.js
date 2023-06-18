@@ -11,8 +11,8 @@ export default function Header() {
   const setOpenModal = useCart((state) => state.setOpenModal);
   console.log(cartItems);
   return (
-    <div>
-      <header className="sticky top-0 z-10">
+    <div className="sticky top-0 z-10">
+      <header>
         {openModal && <Modal />}
         <div class="flex flex-wrap">
           <section class="relative mx-auto">
@@ -133,7 +133,7 @@ export default function Header() {
           </section>
         </div>
       </header>
-      <Slider/>
+      {/* <Slider/> */}
     </div>
   );
 }
