@@ -35,7 +35,8 @@ export default function Modal() {
       </div>
       <div className="flex flex-col bg-white absolute right-0 top-0 h-screen shadow-lg w-screen sm:w-96 max-w-screen gap-4">
         <div className="flex items-center p-6 justify-between text-xl relative">
-          <h1>Cart</h1>
+          <h1 className="font-bold">Cart</h1>
+
           <i
             onClick={closeModal}
             className="fa-solid cursor-pointer hover:opacity-60 fa-xmark"
@@ -64,12 +65,12 @@ export default function Modal() {
             </>
           )}
         </div>
-        <div
+        <button
+          class="mx-auto mt-6 w-1/2 mb-4 rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600"
           onClick={checkout}
-          className="border border-solid border-slate-700 text-xl m-4 p-6 uppercase grid place-items-center hover:opacity-60 cursor-pointer"
         >
           Checkout
-        </div>
+        </button>
       </div>
     </div>,
     document.getElementById("portal")
