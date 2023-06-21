@@ -3,6 +3,9 @@
 <img width="1280" alt="Screenshot 2023-06-19 at 05 27 52" src="https://github.com/knight-95/Ecommerce-Cart/assets/79582395/1babf8fb-f54b-4272-b43c-84dcbb59a6e3">
  <h1>A complete full-stack Next13 eCommerce Store powered by: Stripe + TailwindCSS + Zustand</h1>
 
+## YouTube Demo Link:   https://www.youtube.com/watch?v=1UkfK0LEFxU
+
+ 
  - For setting up the project locally:
    1. first use git clone and clone the repo
    2. Then use
