@@ -34,7 +34,10 @@
 <h3>Products Page</h3>
 <img width="1277" alt="Screenshot 2023-06-19 at 05 28 17" src="https://github.com/knight-95/Ecommerce-Cart/assets/79582395/f635aa68-b1cd-43e1-a065-a46c1a3291b5">
 <br/>
+<h3>Checkout Page</h3>  
+<img width="1280" alt="Screenshot 2023-06-21 at 05 49 30" src="https://github.com/knight-95/Ecommerce-Cart/assets/79582395/fe2380dc-ba07-4b91-9376-d09a9c9377fc">
 
+<br/>
 <h3>Product Information</h3>
 <br/>
 <img width="1277" alt="Screenshot 2023-06-19 at 06 06 06" src="https://github.com/knight-95/Ecommerce-Cart/assets/79582395/4f947b96-d0db-4287-a170-a3e7d4722bd5">
