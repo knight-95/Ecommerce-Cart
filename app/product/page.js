@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import useCart from "../(store)/store";
+import Link from "next/link";
+
 
 export default function ProductPage(props) {
   const { searchParams } = props;
@@ -12,7 +14,7 @@ export default function ProductPage(props) {
   console.log(productInfo);
 
   if (!product?.name) {
-    window.location.href = "/";
+    window.location.href = "#products";
   }
 
   function handleAddToCart() {
@@ -36,7 +38,7 @@ export default function ProductPage(props) {
             className="w-full h-full object-cover"
           />
         </div>
-
+      
         <div class="mt-4 px-5 pb-5">
           <h5 class="text-xl font-semibold tracking-tight text-slate-900">
             {name}
@@ -57,6 +59,7 @@ export default function ProductPage(props) {
               <i className="fa-solid cursor-pointer group-hover:text-slate-500 fa-cart-shopping px-2"></i>
               Add to cart
             </button>
+            <Link class="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300" href={"/"}>Back home</Link>
           </div>
         </div>
       </div>

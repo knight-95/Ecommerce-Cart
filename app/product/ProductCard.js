@@ -7,7 +7,11 @@ import Image from "next/image";
 /* eslint-disable @next/next/no-img-element */
 
 export default function ProductCard(props) {
+
+  // Destructuring array 
   const { product } = props;
+
+  // Renaming id as price_id
   const { id: price_id, unit_amount: cost, product: productInfo } = product;
   const { name, description } = productInfo;
 

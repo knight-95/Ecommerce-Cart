@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 export default function CancelPage() {
-    return (
-        <div>
-            Gutted
-            <Link>Back home</Link>
-        </div>
-    )
+  return (
+    <div>
+      Gutted
+      <Link href={"/"}>Back home</Link>
+    </div>
+  );
 }
