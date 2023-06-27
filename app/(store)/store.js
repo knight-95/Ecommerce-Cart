@@ -1,3 +1,4 @@
+// we have used () brackets so that app folder will not recognise (store) as any route
 import { create } from 'zustand'
 
 const useCart = create(
