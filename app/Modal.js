@@ -9,6 +9,8 @@ export default function Modal() {
   console.log(cartItems);
   const router = useRouter();
 
+  // const [state,setState] = useState(0);
+  
   async function checkout() {
     const lineItems = cartItems.map((cartItem) => {
       console.log("CART ITEM: ", cartItem);
